@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        //if문을 활용함. 똑같음.
+        function ageIf() {
+            const currentYear = 2023; // Date ....(x)
+            let birthYear ; //ex 1999
+            let age ; // ex 23
+
+            birthYear = parseInt( prompt("태어난 연도를 입력하세요.(yyyy)", "0") );
+            age = currentYear - birthYear + 1;
+
+            if( age <20 ){
+                alert(`${age} 살은 성인이 아닙니다.`)
+            }else{
+                alert(`${age} 살은 성인이 아닙니다.`)
+            }
+        }
+
+        //for
+        //같은 동작을 어떤 변수나 구분을 통해 하는 것. (ex) 배열이나 여러가지 자료구조를 쓸때 같은 동작을 for와 index)
+        //for( 초기값; 조건; 증감식 ) { 반복 구간 }
+        for(let i = 1; i<=10; i++) {
+            //console.log(i + '반복중');
+            console.log(`${i+1} 반복중`);
+        }
+
+        for(let i =1; i<=9; i++) {
+            console.log(`2 * ${i} = ${2*i}`);
+        }
+
+        //for문을 하나 사요하여 2단 출력해보기
+
+        //for문을 중첩하여 2~9단까지 출력하기.
+        for(let i =1; i<=9; i++){
+            for(let j = 1; j<=9; j++){
+                console.log(`${i} * ${j} = ${j*i}`);
+                //document.write(`${i} * ${j} = ${j*i}`)
+            }     
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
